@@ -1,0 +1,38 @@
+body {
+
+ margin: 0;
+ padding: 0;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#usuario{
+ text-align: center;
+ 
+}
+#spa{
+ font-size: 30px;
+ color: white;
+}
+#inicio{
+  background-image: url("./img/register.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+#dentro{
+  text-align: center;
+}
+h4{
+  color: black;
+  font-size: 40px;
+  font: bold;
+}
+#inf{
+  font-size: 25px;
+  color: white;
+}
