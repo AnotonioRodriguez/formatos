@@ -1,0 +1,9 @@
+#cont{
+    background-image: url("../img/candy.jpg" );
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
