@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 //Imagenes
-import imagen from './img/register.jpg';
+import imagen from '../img/register.jpg';
 
 //estilos
-
-import './form.css';
+import {Animated} from "react-animated-css";
+import '../Estilos/form.css';
 
 // data
-import { todos } from './todos.json';
+import { todos } from '../todos.json';
 
 // subcomponents
-import TodoForm from './components/TodoForm';
+import TodoForm from './TodoForm';
 
 class Formulario extends Component {
     constructor() {//almacenar los datos del back end, de lo que hace el ur
@@ -28,7 +28,8 @@ class Formulario extends Component {
         })
       });
     }
-  
+
+
     handleAddTodo(todo) {
       this.setState({
         todos: [...this.state.todos, todo]
@@ -38,8 +39,8 @@ class Formulario extends Component {
     render() {
       const todos = this.state.todos.map((todo, i) => {
         return (
-          <div className="col-md-4" key={i}>
-            <div className="card mt-4">
+          <div className="col-md-3" key={i} id="cards">
+            <div className="card mt-3" >
               <div className="card-title text-center">
                 <h3>{todo.title}</h3>
                 <span className="badge badge-pill badge-danger ml-2">
@@ -68,32 +69,33 @@ class Formulario extends Component {
          {/* Comienzo del contador */}
         <div>
         <div id="usuario" className="align-self-center" >
+              <br/><br/>
               <h4>
                   Registrate dentro de nuestra empresa como un cliente mas. <br/><br/> 
               </h4>
-             
+              <br/><br/>
           </div>
         </div>
             <div className="container-fluid " id="inicio" >
                 <div className="row " id="dentro">
-                <div id="inf" className="col-lg-5 sticky-top">
+                <div id="inf" className="col-lg-5">
                     <br/>
                     <p>Numero de Usuarios Registrados:</p>
                     <h4 id="spa" >
                     {this.state.todos.length}
                     </h4>  
                     <br/>     
-                        Para poder continuar con tu proceso de registro debes de llenar el siguiente formulario para estar dado de alta.
+                    <p>Para poder continuar con tu proceso de registro debes de llenar el siguiente formulario para estar dado de alta.</p>
                 </div>
                 <div className="col-lg-5 sticky-top" >
                     <TodoForm onAddTodo={this.handleAddTodo}></TodoForm>
                 </div>
                 </div>
             </div>
-           
-            <div className="container">
-            <div className="row mt-4">
-              <div className="col-md-8">
+            
+            <div id ="form" className="container">
+            <div className="row mt-6">
+              <div className="col-md-12">
                 <div className="row">
                   {todos}
                 </div>

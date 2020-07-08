@@ -15,11 +15,11 @@ code {
  
 }
 #spa{
- font-size: 30px;
- color: white;
+ font-size: 40px;
+ color:red;
 }
 #inicio{
-  background-image: url("./img/register.jpg");
+  background-image: url("../img/register.jpg");
   background-size: cover;
   background-position: center;
   
@@ -30,9 +30,25 @@ code {
 h4{
   color: black;
   font-size: 40px;
-  font: bold;
+ 
 }
 #inf{
-  font-size: 25px;
-  color: white;
+  font-weight:500;
+  font-size: 30px;
+  color: black;
+  border: white;
+}
+
+#cards{
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+#form{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  initial-letter: 15px;
+  text-align: center;
 }

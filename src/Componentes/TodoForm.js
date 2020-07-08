@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import '../Estilos/formulario.css';
+
+
 class TodoForm extends Component {
   constructor () {//almacenar los datos del back end, de lo que hace el ur creo que usuario
     super();
@@ -7,7 +10,7 @@ class TodoForm extends Component {
       title: '',
       responsible: '',
       description: '',
-      priority: 'low'
+      priority: 'Nada'
     };
     this.handleInputChange = this.handleInputChange.bind(this);//buscar y vincular el incial de los valores
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,7 +23,7 @@ class TodoForm extends Component {
       title: '',
       responsible: '',
       description: '',
-      priority: 'low'
+      priority: 'Nada'
     });
   }
 
@@ -33,8 +36,9 @@ class TodoForm extends Component {
   }
 
   render() {
-    return (
-      <div className="card">
+    
+    return ( 
+      <div className="card" id="card">
         <h4>Formulario</h4>
         <form onSubmit={this.handleSubmit} className="card-body">
           <div className="form-group">
@@ -74,9 +78,9 @@ class TodoForm extends Component {
                 value={this.state.priority}
                 onChange={this.handleInputChange}
               >
-              <option>low</option>
-              <option>medium</option>
-              <option>high</option>
+              <option>Ocupacion</option>
+              <option>Estudiante</option>
+              <option>Otro</option>
             </select>
           </div>
           <button type="submit" className="btn btn-primary">
@@ -85,8 +89,8 @@ class TodoForm extends Component {
         </form>
        
       </div>
-      
     )
+   
   }
 
 }

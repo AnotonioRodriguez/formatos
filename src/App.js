@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 import { Home } from './Pages/Home';
-import { Informacion } from './Pages/Informacion';
+import { Informacion} from './Pages/Informacion';
 import { Contact } from './Pages/Contact';
 import { Layout } from './Componentes/Layout';
 import { Navigation } from './Componentes/Navigation';
