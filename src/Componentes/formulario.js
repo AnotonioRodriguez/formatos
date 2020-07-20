@@ -65,16 +65,16 @@ class Formulario extends Component {
       // RETURN THE COMPONENT
 
       return (
-    <div className="App">
+    <div className="App ">
          {/* Comienzo del contador */}
         <div>
-        <div id="usuario" className="align-self-center" >
+        <div id="usuario" className="align-self-center animate__animated animate__rubberBand" >
               <br/><br/>
               <h4>
                   Registrate dentro de nuestra empresa como un cliente mas. <br/><br/> 
               </h4>
               <br/><br/>
-          </div>
+        </div>
         </div>
             <div className="container-fluid " id="inicio" >
                 <div className="row " id="dentro">

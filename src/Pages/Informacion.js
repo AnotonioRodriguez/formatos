@@ -10,13 +10,14 @@ import dul2 from '../img/delce2.jpeg';
 export const Informacion = () => ( 
     
         <div >
-            <Layout>
+            
             <div id="fond">
                 <br/>
             <h1 >Informacion</h1>
             <h2 id="title">  Un poco de nosotros  </h2>
             <br/><br/>
-                <div className="Container-fluid">
+            <Layout>
+                <div className="Container-fluid animate__animated animate__bounce">
                 <div className="row">
                 <div className="col-lg-6">
                     <Card>
@@ -31,7 +32,7 @@ export const Informacion = () => (
                     </Card>
                 </div>
                 <div className="col-lg-6">
-                <Card>
+                     <Card>
                         <Card.Body>
                         <Card.Title  id="title">Personal</Card.Title>
                         <Card.Text  id="description">
@@ -63,10 +64,10 @@ export const Informacion = () => (
                 </div>
                 </div>
                 </div>
-           
+                </Layout>
             
             </div>  
-            </Layout>      
+              
         </div>
     
 )

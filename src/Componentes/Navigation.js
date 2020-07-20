@@ -31,6 +31,7 @@ export const Navigation = () => (
                     <Nav.Item><Nav.Link href="/home">Inicio</Nav.Link> </Nav.Item>
                     <Nav.Item><Nav.Link href="/contact">Contacto</Nav.Link> </Nav.Item>
                     <Nav.Item><Nav.Link href="/about">Informacion</Nav.Link> </Nav.Item>
+                    <Nav.Item><Nav.Link href="/noMatch">Galeria</Nav.Link> </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
