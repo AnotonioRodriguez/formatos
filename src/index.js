@@ -1,15 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const saludar = function(nombre) {
+  
+  return `Hola, ]${nombre}`;
+
+}
 
 
-serviceWorker.unregister();
+console.log(saludar);
